@@ -61,15 +61,8 @@ class Register extends Component {
   }
   render() {
     // console.log("props",this.props);
-    var userhintText,userLabel;
-    if(this.props.role === "student"){
-      userhintText="Enter your Student Id";
-      userLabel="Student Id";
-    }
-    else{
-      userhintText="Enter your Teacher Id";
-      userLabel="Teacher Id";
-    }
+   
+    
     return (
       <div>
         <MuiThemeProvider>
@@ -90,8 +83,8 @@ class Register extends Component {
              />
            <br/>
            <TextField
-             hintText={userhintText}
-             floatingLabelText={userLabel}
+             hintText="Enter your Student Id"
+             floatingLabelText="Student Id"
              onChange = {(event,newValue) => this.setState({email:newValue})}
              />
            <br/>

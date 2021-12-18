@@ -17,14 +17,10 @@ class Loginscreen extends Component {
       <div key={"Login-Div"}>
       <MuiThemeProvider>
         <div>
-           <RaisedButton label={"Register as Student"} primary={true} style={style} onClick={(event) => this.handleClick(event,'student')}/>
+           <RaisedButton label={"Créer Un Compte"} primary={true} style={style} onClick={(event) => this.handleClick(event,'student')}/>
        </div>
        </MuiThemeProvider>
-       <MuiThemeProvider>
-       <div>
-          <RaisedButton label={"Register as Teacher"} primary={true} style={style} onClick={(event) => this.handleClick(event,'teacher')}/>
-      </div>
-      </MuiThemeProvider>
+       
       </div>
     )
     this.state={
@@ -77,14 +73,10 @@ class Loginscreen extends Component {
         <div>
         <MuiThemeProvider>
           <div>
-             <RaisedButton label={"Register as Student"} primary={true} style={style} onClick={(event) => this.handleClick(event,'student')}/>
+             <RaisedButton label={"Créer Un Compte"} primary={true} style={style} onClick={(event) => this.handleClick(event,'student')}/>
          </div>
          </MuiThemeProvider>
-         <MuiThemeProvider>
-         <div>
-            <RaisedButton label={"Register as Teacher"} primary={true} style={style} onClick={(event) => this.handleClick(event,'teacher')}/>
-        </div>
-        </MuiThemeProvider>
+         
         </div>
       )
       loginscreen.push(<Login parentContext={this} appContext={this.props.appContext} role={userRole}/>);
